@@ -1,10 +1,10 @@
+// Dependencies
 var http = require('http');
-<<<<<<< HEAD
 var request = require('request');
 var express = require('express');
 
 var app = express();
-const redirect_uri = 'http://127.0.0.1:8080';
+const redirect_uri = 'http://td-app-custom.herokuapp.com/auth';
 
 /*
 Callback endpoint the TDA app uses.
@@ -46,13 +46,7 @@ app.get('/', (req, res) => {
 
 // start server
 var httpServer = http.createServer(app);
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 80;
 httpServer.listen(port, () => {
     console.log(`Listening at ${port}`);
 });
-=======
-http.createServer(function (req, res) {
-res.writeHead(200, {'Content-Type': 'text/html'});
-res.end('Hello World!');
-}).listen(80);
->>>>>>> 29a82ce013fe3d8eb2f3072b85da1b04b6583879
