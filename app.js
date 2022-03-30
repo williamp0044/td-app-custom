@@ -38,6 +38,12 @@ app.get('/auth', (req, res) => {
     });
 });
 
+
+app.get('/', (req, res) => {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end('Hello World!');
+});
+
 // start server
 var httpServer = http.createServer(app);
 var port = process.env.PORT || 8080;
