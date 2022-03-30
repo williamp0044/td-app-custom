@@ -1,5 +1,5 @@
+// Dependencies
 var http = require('http');
-<<<<<<< HEAD
 var request = require('request');
 var express = require('express');
 
@@ -50,9 +50,3 @@ var port = process.env.PORT || 8080;
 httpServer.listen(port, () => {
     console.log(`Listening at ${port}`);
 });
-=======
-http.createServer(function (req, res) {
-res.writeHead(200, {'Content-Type': 'text/html'});
-res.end('Hello World!');
-}).listen(80);
->>>>>>> 29a82ce013fe3d8eb2f3072b85da1b04b6583879
