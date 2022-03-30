@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
 });
 
 
-const redirect_uri = 'http://localhost:8080';
+const redirect_uri = 'http://localhost:8080/auth';
 
 app.get('/auth', function (req, res) => {
     var authRequest = {
