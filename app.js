@@ -46,7 +46,7 @@ app.get('/', (req, res) => {
 
 // start server
 var httpServer = http.createServer(app);
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 80;
 httpServer.listen(port, () => {
     console.log(`Listening at ${port}`);
 });
