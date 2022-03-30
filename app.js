@@ -4,7 +4,7 @@ var request = require('request');
 var express = require('express');
 
 var app = express();
-const redirect_uri = 'https://td-app-custom.herokuapp.com';
+const redirect_uri = 'https://td-app-custom.herokuapp.com/auth';
 
 /*
 Callback endpoint the TDA app uses.
