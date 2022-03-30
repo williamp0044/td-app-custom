@@ -4,7 +4,7 @@ var request = require('request');
 var express = require('express');
 
 var app = express();
-const redirect_uri = 'https://td-app-custom.herokuapp.com';
+const redirect_uri = 'http://127.0.0.1:8080';
 
 /*
 Callback endpoint the TDA app uses.
@@ -36,6 +36,12 @@ app.get('/auth', (req, res) => {
             res.send(authReply);
         }
     });
+});
+
+
+app.get('/', (req, res) => {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end('Hello World!');
 });
 
 // start server
