@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 const redirect_uri = 'http://localhost:8080/auth';
 
-app.get('/auth', function (req, res) => {
+app.get('/auth', function (req, res) {
     var authRequest = {
         url: 'https://api.tdameritrade.com/v1/oauth2/token',
         method: 'POST',
